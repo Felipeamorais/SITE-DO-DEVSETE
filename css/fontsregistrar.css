@@ -1,0 +1,8 @@
+body{
+    background-image: linear-gradient(to right, #f8c805 0%, #dfae00 100%);
+    color: black;
+    font-family: poppinsregular;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 80px;
+}

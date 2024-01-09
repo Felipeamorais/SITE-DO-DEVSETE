@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina inicial</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #f8c805 0%, #dfae00 100%);
+            margin: 0%;
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background-color: #252525;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        /* Estilos para os elementos do cabeçalho */
+        .logo {
+            flex: 1;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .nome-header {
+            flex: 1;
+            text-align: left;
+            margin-left: -100px;
+            color: #dfae00;
+        }
+
+        .logout {
+            flex: 1;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        /* Estilos para a bola */
+        .imagem {
+            width: 100px;
+            height: 100px;
+            background-color: #252525;
+            border-radius: 50%;
+            margin: 0 auto;
+            /* Centraliza horizontalmente */
+            margin-top: 30px;
+            /* Espaço acima da bola */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            /* Alinhamento superior */
+            max-width: 400px;
+        }
+
+        .button {
+            width: 150px;
+            height: 40px;
+            margin: 10px 0;
+            /* Margem superior e inferior para separar os botões verticalmente */
+            background-color: #252525;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #dfae00;
+            width: 100px;
+            /* Largura desejada em pixels */
+            height: 50px;
+            /* Altura desejada em pixels */
+            font-size: 16px;
+            font-family: poppinsregular;
+            border-radius: 50px;
+        }
+
+        h1 {
+            empty-cells: show;
+        }
+
+        .imgg {
+            width: 200px;
+            /* Defina o tamanho desejado para sua imagem */
+            height: 200px;
+            /* Defina o tamanho desejado para sua imagem */
+            border-radius: 50%;
+            /* Isso cria a forma circular */
+            object-fit: cover;
+            /* Isso mantém a proporção da imagem */
+            object-position: center;
+            /* isso vai centralizar a imagem */
+        }
+        .ativarpresenca{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;/* Alinhamento superior */
+            max-width: 400px;
+        }
+
+        #mensagem {
+            display: none;
+            color: #006400;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../images/nomedodevsete.png" width="200px">
+        <!--<div class="logo">DEVSETE</div>-->
+        <center>
+            <div class="nome-header">Cristiano Ronaldo</div>
+        </center>
+        <a href="../index.html"><button>logout</button></a>
+    </header>
+    <center>
+        <img src="../images/rosto.png" class="imgg">
+        <h1>Cristiano Ronaldo</h1>
+        <h2>RA:24000001</h2>
+        <h3>Cristiano.ronaldo@sou.unifeob.edu.br</h3>
+    </center>
+    <center>
+    <div class="ativarpresenca">
+        <button onclick="mostrarMensagem()">Ativar a Presença</button>
+
+        <p id="mensagem">ativou a presença</p>
+
+        <script>
+            function mostrarMensagem() {
+
+                var mensagem = document.getElementById("mensagem");
+
+                mensagem.style.display = "block";
+            }
+        </script>
+    </center>
+    </div>
+    <center>
+        <div class="container">
+            <a href="../pages/presença_falta.html"><button class="button">Ver presenças/Falta</button></a>
+            <a href="../pages/atividades_pendentes.html"><button class="button">Atividades Pendentes</button></a>
+            <a href="../pages/notas.html"><button class="button">Notas</button></a>
+            <a href="../pages/duvidas.html"><button class="button">Dúvidas</button></a>
+    </center>
+    </div>
+</body>
+
+</html>

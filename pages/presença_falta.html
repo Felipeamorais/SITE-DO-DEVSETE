@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #f8c805 0%, #dfae00 100%);
+            margin: 0%;
+        }
+
+        table {
+            border-collapse: separate;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #252525;
+            text-align: center;
+        }
+
+        th {
+            background-color: #dfae00;
+        }
+
+        header {
+            background-color: #252525;
+            color: #dfae00;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .red-retangulo {
+            background-color: red;
+            height: 50px;
+            /* Ajuste a altura conforme necessário */
+            width: 350px;
+            border-radius: 45px;
+            background-color: red;
+            height: 50px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nome-header {
+            flex: 1;
+            text-align: left;
+            margin-left: 525px;
+            color: #dfae00;
+        }
+
+        .red-cell {
+            background-color: red;
+            color: white;
+        }
+        button {
+            background-color: #dfae00;
+            width: 100px;
+            /* Largura desejada em pixels */
+            height: 50px;
+            /* Altura desejada em pixels */
+            font-size: 16px;
+            font-family: poppinsregular;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../images/nomedodevsete.png" width="200px">
+        <div class="nome-header">Cristiano Ronaldo</div>
+        <a href="../index.html"><button>logout</button></a>
+    </header>
+    <center>
+        <h1>Fevereiro</h1>
+    </center>
+    <table>
+        <tr>
+            <th>Domingo</th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th>Quarta</th>
+            <th>Quinta</th>
+            <th>Sexta</th>
+            <th>Sábado</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="red-cell">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td class="red-cell">20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td class="red-cell">30</td>
+            <td>31</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="red-retangulo">
+        <center>teve 3 faltas</center>
+    </div>
+</body>
+
+</html>

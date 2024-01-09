@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <title>notas</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #f8c805 0%, #dfae00 100%);
+            margin: 0%;
+        }
+        header{
+            background-color: #252525;
+            color: #dfae00;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 30px;
+
+        }
+        .linha{
+            border: 1px solid black; /* Cor e estilo da linha preta */
+            margin: 10px 0; /* Espaçamento entre a linha e os h1 */
+        }
+        .divisão{
+            width: 900px; /* Largura desejada */
+            height: 90px; /* Altura desejada */
+            background-color: #252525; /* Cor de fundo preto */
+            margin: 90px 0; /* Espaçamento entre as fileiras */
+            color: white;
+            padding-right: 10px;
+            border-radius: 90px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 3.5);
+            
+        }
+        .greeting{
+            flex: 1;
+            text-align: left;
+            margin-left: 33.5%;
+        }
+
+        .notas{
+            margin-left: 3%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        button {
+            background-color: #dfae00;
+            width: 100px;
+            /* Largura desejada em pixels */
+            height: 50px;
+            /* Altura desejada em pixels */
+            font-size: 16px;
+            font-family: poppinsregular;
+            border-radius: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="../images/nomedodevsete.png" width="200px">
+        <div class="greeting">Cristiano Ronaldo</div>
+        <a href="../index.html"><button>logout</button></a>
+    </header>
+    <h1 class = "notas" >Notas</h1>
+    <hr class="linha">
+    <center>
+    <h1>Primeiro semestre</h1>
+    </center>
+    <center>
+    <div class="divisão"><br><br>Marketing Digital_______________________________________________________________________________NOTA 10,0</div>
+    <div class="divisão"><br><br>Redes de Computadores___________________________________________________________________________NOTA 9,5</div>
+    <div class="divisão"><br><br>Interface Homem Máquina_________________________________________________________________________NOTA 8,0</div>
+    <div class="divisão"><br><br>Fundamentos da Tecnologia da Informação_________________________________________________________NOTA 7,0</div>
+    </center>
+</body>
+</html>
